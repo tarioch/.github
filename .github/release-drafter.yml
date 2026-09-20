@@ -2,13 +2,15 @@ name-template: 'v$NEXT_PATCH_VERSION'
 tag-template: 'v$NEXT_PATCH_VERSION'
 categories:
   - title: '🚀 Features'
-    label: 'feature'
+    when:
+      label: 'feature'
   - title: '🐛 Bug Fixes'
-    label: 'bugfix'
+    when:
+      label: 'bugfix'
   - title: '🧰 Maintenance'
-    label: 'chore'
+    when:
+      label: 'chore'
 template: |
   ## Changes
 
   $CHANGES
-
